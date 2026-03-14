@@ -84,6 +84,7 @@
 #define RAYLIB_H
 
 #include <stdarg.h>     // Required for: va_list - Only used by TraceLogCallback
+#include <raylib_aliases.h>
 
 #define RAYLIB_VERSION_MAJOR 5
 #define RAYLIB_VERSION_MINOR 6
