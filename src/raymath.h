@@ -3111,6 +3111,26 @@ inline const Matrix& operator *= (Matrix& lhs, const Matrix& rhs)
     lhs = MatrixMultiply(lhs, rhs);
     return lhs;
 }
+
+inline Rectangle operator + (const Rectangle& lhs, const Vector2& rhs)
+{
+	return {
+		.x = lhs.x + rhs.x,
+		.y = lhs.y + rhs.y,
+		.width = lhs.width,
+		.height = lhs.height,
+	};
+}
+
+inline Rectangle operator - (const Rectangle& lhs, const Vector2& rhs)
+{
+	return {
+		.x = lhs.x - rhs.x,
+		.y = lhs.y - rhs.y,
+		.width = lhs.width,
+		.height = lhs.height,
+	};
+}
 //-------------------------------------------------------------------------------
 #endif  // C++ operators
 
