@@ -2802,6 +2802,11 @@ inline Vector2 operator * (const Vector2& lhs, const float& rhs)
     return Vector2Scale(lhs, rhs);
 }
 
+inline Vector2 operator * (const float& lhs, const Vector2& rhs)
+{
+    return Vector2Scale(rhs, lhs);
+}
+
 inline const Vector2& operator *= (Vector2& lhs, const float& rhs)
 {
     lhs = Vector2Scale(lhs, rhs);
